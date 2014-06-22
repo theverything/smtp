@@ -1,0 +1,17 @@
+{
+  "name": "smtp",
+  "version": "0.0.1",
+  "description": "A test smtp server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "theverything",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^1.3.0",
+    "hapi": "^6.0.2",
+    "mailin": "0.0.11"
+  }
+}
