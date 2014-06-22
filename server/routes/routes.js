@@ -16,6 +16,18 @@ module.exports = [
       console.log(request.payload);
       reply("success");
     }
+  },
+
+  {
+    path: "/static/{path*}",
+    method: "GET",
+    handler: {
+        directory: {
+            path: "./dist",
+            listing: false,
+            index: false
+        }
+    }
   }
 
 ];
