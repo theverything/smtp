@@ -1,5 +1,5 @@
-var server = require('./server');
-var mailin = require('./mailin');
+var server = require('./server/server');
+//var mailin = require('./server/smtp');
 
 server.start(function () {
   console.log("Hapi server started @", server.info.uri);
@@ -15,7 +15,7 @@ server.start(function () {
  *  };
  * Here disable the webhook posting so that you can do what you want with the
  * parsed message. */
-mailin.start({
-  port: 25,
-  disableWebhook: true // Disable the webhook posting.
-});
+// mailin.start({
+//   port: 25,
+//   disableWebhook: true // Disable the webhook posting.
+// });

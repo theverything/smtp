@@ -1,11 +1,13 @@
 var Hapi = require('hapi');
-var Store = require('./data');
-var routes = require('./routes');
+var Store = require('./../data');
+var routes = require('./routes/routes');
 
 var server_options = {
   views: {
     engines: { html: require("handlebars") },
-    path: __dirname + "/views"
+    path: __dirname + "/../views",
+    layout: true,
+    partialsPath: __dirname + "/../views/partials"
   }
 }
 
